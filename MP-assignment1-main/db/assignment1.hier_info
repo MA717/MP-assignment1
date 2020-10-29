@@ -1,0 +1,114 @@
+|fullAdder
+Y2 <= 74153M:inst11.Y
+As0 => 74153M:inst11.A
+As0 => 74153M:inst.A
+As0 => 74153M:inst12.A
+As0 => 74153M:inst13.A
+Bs1 => 74153M:inst11.B
+Bs1 => 74153M:inst.B
+Bs1 => 74153M:inst12.B
+Bs1 => 74153M:inst13.B
+B1 => A2B2.IN0
+B1 => 7483:inst6.B1
+B1 => A1B1.IN1
+B1 => 74153M:inst.C1
+B2 => A2B2.IN1
+B2 => 7483:inst6.B2
+B2 => 74153M:inst11.C1
+B4 => 7483:inst6.B4
+B4 => A4B4.IN1
+B4 => 74153M:inst13.C1
+Cin => 7483:inst6.C0
+A1 => 7483:inst6.A1
+A1 => A1B1.IN0
+A1 => 74153M:inst.C0
+A2 => 7483:inst6.A2
+A2 => 74153M:inst11.C0
+A3 => 7483:inst6.A3
+A3 => A3B3.IN0
+A3 => 74153M:inst12.C0
+B3 => 7483:inst6.B3
+B3 => A3B3.IN1
+B3 => 74153M:inst12.C1
+A4 => 7483:inst6.A4
+A4 => A4B4.IN0
+A4 => 74153M:inst13.C0
+GRD => 74153M:inst11.GN
+GRD => 74153M:inst.GN
+GRD => 74153M:inst12.GN
+GRD => 74153M:inst13.GN
+Y1 <= 74153M:inst.Y
+Y3 <= 74153M:inst12.Y
+Y4 <= 74153M:inst13.Y
+Cout <= 7483:inst6.C4
+
+
+|fullAdder|74153M:inst11
+Y <= 9.DB_MAX_OUTPUT_PORT_TYPE
+GN => 26.IN0
+B => 27.IN0
+A => 29.IN0
+C0 => 1.IN3
+C1 => 2.IN3
+C2 => 3.IN3
+C3 => 4.IN3
+
+
+|fullAdder|7483:inst6
+C4 <= 83.DB_MAX_OUTPUT_PORT_TYPE
+B4 => 22.IN0
+B4 => 26.IN0
+A4 => 22.IN1
+A4 => 26.IN1
+B3 => 21.IN0
+B3 => 25.IN0
+A3 => 21.IN1
+A3 => 25.IN1
+B2 => 20.IN0
+B2 => 24.IN0
+A2 => 20.IN1
+A2 => 24.IN1
+B1 => 19.IN0
+B1 => 23.IN0
+A1 => 19.IN1
+A1 => 23.IN1
+C0 => 17.IN0
+S4 <= 45.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= 43.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= 42.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fullAdder|74153M:inst
+Y <= 9.DB_MAX_OUTPUT_PORT_TYPE
+GN => 26.IN0
+B => 27.IN0
+A => 29.IN0
+C0 => 1.IN3
+C1 => 2.IN3
+C2 => 3.IN3
+C3 => 4.IN3
+
+
+|fullAdder|74153M:inst12
+Y <= 9.DB_MAX_OUTPUT_PORT_TYPE
+GN => 26.IN0
+B => 27.IN0
+A => 29.IN0
+C0 => 1.IN3
+C1 => 2.IN3
+C2 => 3.IN3
+C3 => 4.IN3
+
+
+|fullAdder|74153M:inst13
+Y <= 9.DB_MAX_OUTPUT_PORT_TYPE
+GN => 26.IN0
+B => 27.IN0
+A => 29.IN0
+C0 => 1.IN3
+C1 => 2.IN3
+C2 => 3.IN3
+C3 => 4.IN3
+
+
