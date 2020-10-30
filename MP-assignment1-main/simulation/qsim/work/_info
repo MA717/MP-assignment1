@@ -18,20 +18,20 @@ Iol6dQJKjI4YSn>41OhVb]0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 dC:/Users/Memo/Desktop/MP-assignment1-main/simulation/qsim
 w1603839100
-8assignment1.vo
-Fassignment1.vo
+Z4 8assignment1.vo
+Z5 Fassignment1.vo
 !i122 8
 L0 32 827
-Z4 OV;L;2020.1;71
+Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1603839101.000000
-!s107 assignment1.vo|
-!s90 -work|work|assignment1.vo|
+Z7 !s108 1603839101.000000
+Z8 !s107 assignment1.vo|
+Z9 !s90 -work|work|assignment1.vo|
 !i113 1
-Z6 o-work work
-Z7 tCvgOpt 0
+Z10 o-work work
+Z11 tCvgOpt 0
 nfull@adder
 vfullAdder_vlg_vec_tst
 R0
@@ -46,14 +46,62 @@ w1603839099
 FWaveform1.vwf.vt
 !i122 9
 L0 30 120
-R4
+R6
 r1
 !s85 0
 31
-R5
+R7
 !s107 Waveform1.vwf.vt|
 !s90 -work|work|Waveform1.vwf.vt|
 !i113 1
-R6
-R7
+R10
+R11
 nfull@adder_vlg_vec_tst
+vRegister
+Z12 !s110 1603997865
+!i10b 1
+!s100 RXGVkN1o<AiAFbYgCR^Rf0
+R1
+I7n=A160k9^zSV_LRc5hj42
+R2
+R3
+w1603997862
+R4
+R5
+!i122 20
+L0 32 306
+R6
+r1
+!s85 0
+31
+Z13 !s108 1603997865.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@register
+vRegister_vlg_vec_tst
+R12
+!i10b 1
+!s100 nObHb?L>7dTgLodegVHeH3
+R1
+IEViO5d_P6R2D?=iaO4F380
+R2
+R3
+w1603997860
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+!i122 21
+L0 30 81
+R6
+r1
+!s85 0
+31
+R13
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R10
+R11
+n@register_vlg_vec_tst

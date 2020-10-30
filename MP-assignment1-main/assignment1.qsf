@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "MAX V"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY fullAdder
+set_global_assignment -name TOP_LEVEL_ENTITY Register
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "07:40:39  OCTOBER 27, 2020"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
@@ -48,3 +48,6 @@ set_global_assignment -name BDF_FILE schematics/fullAdder.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE waveForms/Waveform.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name BDF_FILE Register.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE RegForm.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf

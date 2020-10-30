@@ -1,5 +1,5 @@
 Analysis & Synthesis report for assignment1
-Wed Oct 28 00:43:10 2020
+Thu Oct 29 22:39:46 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,13 +41,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Wed Oct 28 00:43:10 2020       ;
+; Analysis & Synthesis Status ; Successful - Thu Oct 29 22:39:46 2020       ;
 ; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name               ; assignment1                                 ;
-; Top-level Entity Name       ; fullAdder                                   ;
+; Top-level Entity Name       ; Register                                    ;
 ; Family                      ; MAX V                                       ;
-; Total logic elements        ; 16                                          ;
-; Total pins                  ; 17                                          ;
+; Total logic elements        ; 4                                           ;
+; Total pins                  ; 11                                          ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
 +-----------------------------+---------------------------------------------+
@@ -58,7 +58,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                            ; fullAdder          ; assignment1        ;
+; Top-level entity name                                            ; Register           ; assignment1        ;
 ; Family name                                                      ; MAX V              ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -139,15 +139,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                  ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                        ; Library ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------+---------+
-; schematics/fullAdder.bdf         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Memo/Desktop/MP-assignment1-main/schematics/fullAdder.bdf  ;         ;
-; 74153m.bdf                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/others/maxplus2/74153m.bdf ;         ;
-; 7483.bdf                         ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/others/maxplus2/7483.bdf   ;         ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                     ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                           ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+---------+
+; Register.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Memo/Desktop/MP-assignment1-main/Register.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -155,47 +153,42 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 16    ;
-;     -- Combinational with no register       ; 16    ;
-;     -- Register only                        ; 0     ;
+; Total logic elements                        ; 4     ;
+;     -- Combinational with no register       ; 0     ;
+;     -- Register only                        ; 4     ;
 ;     -- Combinational with a register        ; 0     ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 5     ;
-;     -- 3 input functions                    ; 8     ;
-;     -- 2 input functions                    ; 3     ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- 2 input functions                    ; 0     ;
 ;     -- 1 input functions                    ; 0     ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 16    ;
+;     -- normal mode                          ; 4     ;
 ;     -- arithmetic mode                      ; 0     ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
 ;     -- synchronous clear/load mode          ; 0     ;
-;     -- asynchronous clear/load mode         ; 0     ;
+;     -- asynchronous clear/load mode         ; 4     ;
 ;                                             ;       ;
-; Total registers                             ; 0     ;
-; I/O pins                                    ; 17    ;
-; Maximum fan-out node                        ; As0   ;
-; Maximum fan-out                             ; 9     ;
-; Total fan-out                               ; 55    ;
-; Average fan-out                             ; 1.67  ;
+; Total registers                             ; 4     ;
+; I/O pins                                    ; 11    ;
+; Maximum fan-out node                        ; Clk   ;
+; Maximum fan-out                             ; 4     ;
+; Total fan-out                               ; 20    ;
+; Average fan-out                             ; 1.33  ;
 +---------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                     ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name      ; Entity Name ; Library Name ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------+-------------+--------------+
-; |fullAdder                 ; 16 (0)      ; 0            ; 0          ; 17   ; 0            ; 16 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |fullAdder               ; fullAdder   ; work         ;
-;    |74153m:inst11|         ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |fullAdder|74153m:inst11 ; 74153m      ; work         ;
-;    |74153m:inst12|         ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |fullAdder|74153m:inst12 ; 74153m      ; work         ;
-;    |74153m:inst13|         ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |fullAdder|74153m:inst13 ; 74153m      ; work         ;
-;    |74153m:inst|           ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |fullAdder|74153m:inst   ; 74153m      ; work         ;
-;    |7483:inst6|            ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |fullAdder|7483:inst6    ; 7483        ; work         ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------+-------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
+; |Register                  ; 4 (4)       ; 4            ; 0          ; 11   ; 0            ; 0 (0)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Register           ; Register    ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -204,11 +197,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 4     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Asynchronous Clear ; 4     ;
+; Number of registers using Asynchronous Load  ; 4     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
@@ -220,27 +213,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Wed Oct 28 00:43:03 2020
+    Info: Processing started: Thu Oct 29 22:39:26 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off assignment1 -c assignment1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file schematics/fulladder.bdf
     Info (12023): Found entity 1: fullAdder
-Info (12127): Elaborating entity "fullAdder" for the top level hierarchy
-Info (12128): Elaborating entity "74153M" for hierarchy "74153M:inst11"
-Info (12130): Elaborated megafunction instantiation "74153M:inst11"
-Info (12128): Elaborating entity "7483" for hierarchy "7483:inst6"
-Info (12130): Elaborated megafunction instantiation "7483:inst6"
-Info (13014): Ignored 1 buffer(s)
-    Info (13019): Ignored 1 SOFT buffer(s)
-Info (21057): Implemented 33 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 12 input pins
-    Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 16 logic cells
+Info (12021): Found 1 design units, including 1 entities, in source file register.bdf
+    Info (12023): Found entity 1: Register
+Info (12127): Elaborating entity "Register" for the top level hierarchy
+Info (21057): Implemented 15 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
+    Info (21059): Implemented 4 output pins
+    Info (21061): Implemented 4 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4707 megabytes
-    Info: Processing ended: Wed Oct 28 00:43:10 2020
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Peak virtual memory: 4706 megabytes
+    Info: Processing ended: Thu Oct 29 22:39:46 2020
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:51
 
 
